@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { Shipment, CreateShipmentInput, UpdateShipmentInput } from "@/types/shipment";
 import { toast } from "sonner";
 
-const API_BASE_URL = "http://localhost:5000/api/shipments";
+const API_BASE_URL = "https://mern-t-assessment.onrender.com/api/shipments"; //"http://localhost:5000/api/shipments";
 
 interface ShipmentStore {
   shipments: Shipment[];

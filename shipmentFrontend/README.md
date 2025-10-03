@@ -73,5 +73,5 @@ No environment variables needed for development. The API URL is configured in:
 
 To change the API URL, update:
 ```typescript
-const API_BASE_URL = "http://localhost:5000/api/shipments";
+const API_BASE_URL = "https://mern-t-assessment.onrender.com/api/shipments"; //"http://localhost:5000/api/shipments";;
 ```
