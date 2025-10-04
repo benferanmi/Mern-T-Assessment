@@ -6,7 +6,6 @@ import { useUserModeStore } from "../../store/userModeStore";
 import { SingleStepData } from "../../types";
 import { stepData } from "../../lib/stepData";
 
-
 export const StepsSection = () => {
   const userMode = useUserModeStore((state) => state.userMode);
 
