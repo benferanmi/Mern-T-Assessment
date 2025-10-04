@@ -23,6 +23,26 @@ app.get("/health", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  const html = `<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Shipment Backend</title>
+      <style>
+        body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f7fafc; color:#111827; }
+        .badge { padding:1rem 1.5rem; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.08); background:white; font-weight:600; }
+      </style>
+    </head>
+    <body>
+      <div class="badge">Shipment Backend Running</div>
+    </body>
+  </html>`;
+
+  res.status(200).type("html").send(html);
+});
+
 app.use("/api/shipments", shipmentRoutes);
 
 app.use(notFoundHandler);
