@@ -47,7 +47,7 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="flex justify-between h-20 px-3 lg:hidden fixed w-full z-50 top-0 bg-black">
+      <div className="flex justify-between h-20 px-3 lg:hidden fixed w-full z-[90] top-0 bg-black">
         <img src={Logo} alt="logo" className="cursor-pointer w-20" />
         <div className="flex gap-8 items-center">
           <MobileNav />

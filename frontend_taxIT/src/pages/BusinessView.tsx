@@ -35,7 +35,7 @@ const BusinessView = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-[-300px] right-0 w-[560px] h-[560px] pointer-events-none z-20">
+        <div className="hidden md:block absolute bottom-[-300px] right-0 w-[560px] h-[560px] pointer-events-none z-20">
           <div className="w-[530px] h-[530px] border-[#5cb32a] border-2 rounded-full" />
           <img
             src={eclipseOne}
@@ -45,11 +45,11 @@ const BusinessView = () => {
         </div>
       </div>
 
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-[300px] md:top-[620px] z-50">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[600px] md:top-[620px] z-50">
         <img
           src={bannerImg}
           alt="business banner"
-          className="max-w-full h-auto"
+          className="max-w-full min-w-[250px] h-auto"
         />
       </div>
 
